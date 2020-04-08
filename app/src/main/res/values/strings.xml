@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SoportesNitzan</string>
+    <string name="back">Regresar</string>
+    <string name="get_password_link">Enviar link al correo para resetear clave</string>
+    <string name="email_hint">email</string>
+
+
+</resources>

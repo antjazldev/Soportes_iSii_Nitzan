@@ -1,0 +1,66 @@
+<?xml  version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <TableLayout  android:id="@+id/TableLayout01"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent">
+        <TableRow android:id="@+id/TableRow01"
+            android:layout_height="45dp"
+            android:layout_width="wrap_content"
+            android:background="@color/bluedark">
+            <TextView   android:text="Hello"
+                android:paddingLeft="12dp"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtTituloSoporte"
+                android:layout_gravity="left"
+                android:textColor="@color/blanco"
+                android:textSize="20dp"
+                />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="80dp"
+                android:background="@drawable/gear"
+                />
+
+
+        </TableRow>
+        <TableRow android:id="@+id/TableRow02"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:background="@color/plata">
+            <TextView   android:text="Nombre de la finca"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtFincaSoporte"
+                android:layout_gravity="right"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp"
+                />
+
+
+        </TableRow>
+        <TableRow android:id="@+id/TableRow03"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:background="@color/plata">
+            <TextView   android:text="Detalle de la finca"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtFincaDetalle"
+                android:layout_gravity="right"
+                android:textColor="@color/black_overlay"
+                android:textSize="20dp"
+                />
+
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

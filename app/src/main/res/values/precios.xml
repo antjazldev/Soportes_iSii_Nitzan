@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<integer name="horasbase">65</integer>
+<integer name="horasextra">45</integer>
+    <item name="tarifaminuto" type="dimen" format="float">0.35</item>
+</resources>

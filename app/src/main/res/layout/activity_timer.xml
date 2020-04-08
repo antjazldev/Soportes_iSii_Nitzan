@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TimerActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DETALLE DEL SOPORTE"
+            android:layout_gravity="center_horizontal"
+            android:textSize="25dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent2"
+            android:background="@color/bluedark"
+            />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="205dp"
+            tools:layout_editor_absoluteX="20dp"
+            tools:layout_editor_absoluteY="20dp"
+            android:background="@drawable/border">
+            <TableRow
+                android:layout_marginTop="2dp">
+
+                <TextView
+                    android:background="@drawable/border"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginHorizontal="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:text="CLIENTE: "
+                    android:textColor="@color/zimablue"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <TextView
+
+                    android:id="@+id/Cliente_timer"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginHorizontal="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:gravity="left"
+                    android:text="CLIENTE: "
+                    android:textColor="@color/zimablue"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+            </TableRow>
+            <TableRow android:layout_marginTop="2dp">
+
+                <TextView
+
+                    android:text="CATEGORIA: "
+                    android:background="@drawable/border2"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginHorizontal="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:textColor="@color/zimablue"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/Categoria_timer"
+                    android:background="@drawable/border2"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginHorizontal="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text="categoria"
+                    android:textColor="@color/zimablue"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+            </TableRow>
+            <TableRow android:layout_marginTop="2dp">
+
+
+                <TextView
+
+                    android:text="DETALLE:"
+                    android:background="@drawable/border"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginHorizontal="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:textColor="@color/zimablue"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/Detalle_timer"
+                    android:background="@drawable/border"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginHorizontal="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text="detalle "
+                    android:textColor="@color/zimablue"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+            </TableRow>
+            <TableRow android:layout_marginTop="2dp">
+
+
+                <TextView
+
+                    android:text="SOLICITANTE:"
+                    android:background="@drawable/border2"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginHorizontal="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:textColor="@color/zimablue"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/Solicitante_timer"
+                    android:background="@drawable/border2"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginHorizontal="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text=""
+                    android:textColor="@color/zimablue"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+            </TableRow>
+            <TableRow android:layout_marginTop="2dp">
+
+
+                <TextView
+
+                    android:text="TELEFONO:"
+                    android:background="@drawable/border"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginHorizontal="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:textColor="@color/zimablue"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/Telefono_timer"
+                    android:autoLink="phone"
+                    android:background="@drawable/border"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginHorizontal="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text=""
+                    android:textColor="@color/zimablue"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+            </TableRow>
+            <TableRow android:layout_marginTop="2dp">
+
+                <TextView
+
+                    android:text="COMENTARIOS:"
+                    android:background="@drawable/border2"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginHorizontal="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:textColor="@color/zimablue"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/Comentarios_timer"
+                    android:background="@drawable/border2"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginHorizontal="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text="Comentarios"
+                    android:textColor="@color/zimablue"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+            </TableRow>
+            <TableRow android:layout_marginTop="2dp">
+
+                <TextView
+
+                    android:text="COSTO SOPORTE:"
+                    android:background="@drawable/border"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginHorizontal="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:textColor="@color/zimablue"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/PrecioSoporte_timer"
+                    android:background="@drawable/border"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginHorizontal="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text="Costo soporte"
+                    android:textColor="@color/zimablue"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+            </TableRow>
+            <TableRow android:layout_marginTop="2dp">
+
+                <TextView
+
+                    android:text="COSTO MOVILIZACION:"
+                    android:background="@drawable/border2"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginHorizontal="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:textColor="@color/zimablue"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvMov_timer"
+                    android:background="@drawable/border2"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginHorizontal="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text="Costo mov"
+                    android:textColor="@color/zimablue"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+            <TableRow android:layout_marginTop="2dp">
+
+                <TextView
+                    android:text="COSTO TOTAL: "
+                    android:background="@drawable/border"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginHorizontal="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:textColor="@color/zimablue"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/PrecioTotal_timer"
+                    android:background="@drawable/border"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginHorizontal="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text=" "
+                    android:textColor="@color/zimablue"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+            </TableRow>
+        </TableLayout>
+
+        <Chronometer
+            android:id="@+id/chronometer"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:textSize="35dp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="20dp"
+            tools:layout_editor_absoluteY="20dp"
+            android:background="@color/plomito"
+            android:layout_gravity="center">
+
+            <TableRow android:layout_marginTop="2dp"
+                android:layout_gravity="center_vertical">
+
+        <Button
+            android:layout_width="150dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/blanco"
+            android:layout_height="30dp"
+            android:onClick="startChronometer"
+            android:text="Iniciar" />
+
+        <Button
+            android:layout_width="150dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/blanco"
+            android:layout_height="30dp"
+            android:onClick="pauseChronometer"
+            android:text="Pause" />
+
+        <Button
+            android:layout_width="150dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/blanco"
+            android:layout_height="30dp"
+            android:onClick="resetChronometer"
+            android:text="Reset" />
+
+
+        </TableRow> </TableLayout>
+    <LinearLayout
+        android:id="@+id/firmasLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/blanco"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/tvQnFirna"
+            android:layout_width="180dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/zimablue"
+            android:text="FIRMA TECNICO:"
+            android:textAlignment="center"
+            android:textColor="@color/mostaza"
+            android:textSize="20dp" />
+        <EditText
+            android:id="@+id/etPersonaQueFirma"
+            android:hint="Ingrese nombre del técnico"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:text=""/>
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/canvasLayout"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:id="@+id/buttonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blanco"
+            android:weightSum="3">
+
+
+            <Button
+                android:id="@+id/clear"
+                android:layout_width="99dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:text="LIMPIAR"
+                android:textColor="@color/blanco"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/getsign"
+                android:layout_width="99dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:text="GUARDAR"
+                android:textColor="@color/blanco" />
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="99dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:text="CANCELAR"
+                android:textColor="@color/blanco" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tvComentarios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Observaciones del soporte:"
+            android:layout_gravity="center_horizontal"
+            android:textSize="25dp"
+            android:textAlignment="center"
+            android:textColor="@color/mostaza"
+            android:background="@color/zimablue"
+            />
+        <EditText
+            android:id="@+id/etComentariosTecnico"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:minLines="3"
+            android:gravity="top|left"
+            android:maxLines="10"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:scrollbars="vertical"
+        />
+        <TextView
+            android:id="@+id/rcTipoSoporte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Elija el tipo del soporte:"
+            android:layout_gravity="center_horizontal"
+            android:textSize="25dp"
+            android:textAlignment="center"
+            android:textColor="@color/mostaza"
+            android:background="@color/zimablue"
+            />
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton android:id="@+id/radio_garantias"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Garantía"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/radio_facturacion"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Facturación"
+                android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
+        <Button
+            android:id="@+id/btnpdf"
+            android:layout_width="440dp"
+            android:layout_height="50dp"
+            android:onClick="resetChronometer"
+            android:text="GENERAR PDF"
+            android:enabled="false"/>
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"/>
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
